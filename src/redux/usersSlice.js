@@ -1,3 +1,5 @@
+// src/redux/usersSlice.js
+
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
@@ -14,9 +16,7 @@ const usersSlice = createSlice({
     status: "idle",
     error: null,
   },
-  reducers: {
-    // you can add user-specific reducers here if needed
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchUsers.pending, (state) => {
